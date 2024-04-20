@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cubyz</title>
+</head>
+
+<body>
+    <nav>
+        <div class="banner">
+            <img src="assets/images/green_purple_crystals.png" alt="">
+            <div>
+                <img class="logo" src="assets/textures/pixelguys.png" alt="">
+                <a href="">Home</a>
+                <a href="">Features</a>
+                <a href="">Information</a>
+            </div>
+            <p>
+                Cubyz is limitless and up to your Imagination.
+            </p>
+        </div>
+    </nav>
+    <main>
+        <p style="display: none;"> <!--Remove the display none, if you want it displayed-->
+            Embark on an thrilling journey across vast landscapes, exploring the deepest of caves unseen by daylight.
+            Discover ancient minerals, untouched by time, as you discover more in this forgotten
+            world.
+        </p>
+        <div class="flexbox">
+            <div class="container">
+                <p class="title">
+                    Free and open source
+                </p>
+                <p>
+                    You can also become a contributor and make miracles in Cubyz's development.<br>
+                    <button onclick="window.location.href='https://github.com/PixelGuys/Cubyz'">Github</button><button onclick="window.location.href='https://github.com/PixelGuys/Cubyz/issues'">Issues</button><button onclick="window.location.href='https://github.com/PixelGuys/Cubyz/wiki/Addons'">Addons</button>
+                </p>
+            </div>
+            <div class="container">
+                <p class="title">
+                    Installation Guide
+                </p>
+                <p>
+                    The guide can be found <a href="https://github.com/PixelGuys/Cubyz/blob/master/README.md">here</a>.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <p class="title">
+                Features
+            </p>
+            <p>
+                Cubyz is a limitless indie game which uses voxels as a base, but don't think that's all! There are a
+                ton of own features. If you want your own features, you can expand the game with addons.
+            </p>
+        </div>
+        <div class="container">
+            <p class="title">
+                Some screenshots
+            </p>
+            <div class="images">
+                <img src="assets/images/colorful_crystals.png" alt="">
+                <img src="assets/images/treetops.png" alt="">
+                <img src="assets/images/icymountain.png" alt="">
+                <img src="assets/images/green_crystals.png" alt="">
+                <img src="assets/images/island.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="?">Legal</a>
+            <a href="?">Guidelines</a>
+            <a href="https://github.com/pixelguys/Cubyz">Github</a>
+            <a href="https://www.youtube.com/@quantumdeveloper2733">Youtube</a>
+            <a href="https://discord.gg/XtqCRRG">Discord</a>
+        </div>
+    </footer>
+</body>
+
+<style>
+    * {
+        color-scheme: dark;
+        font-family: font;
+        font-size: 18px;
+        text-shadow: 2px 2px 0px #000000;
+    }
+
+    @font-face {
+        font-family: font;
+        src: url(assets/fonts/unscii-16-full.ttf);
+    }
+
+    @font-face {
+        font-family: small;
+        src: url(assets/fonts/slkscr.ttf);
+    }
+
+    ::-webkit-scrollbar {
+        height: 15px;
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-image: url(assets/textures/scrollbar.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-image: url(assets/textures/oak_planks.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-image: url(assets/textures/oak_planks.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+    }
+
+    body {
+        background-image: url(assets/textures/void_stone.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        margin: 0px;
+    }
+
+    button {
+        background-image: url(assets/textures/button.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        border-radius: 0px;
+        outline: none;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        margin: 5px;
+    }
+
+    button:hover {
+        background-image: linear-gradient(to bottom, #00000080, #00000080), url(assets/textures/button.png);
+        cursor: pointer;
+    }
+
+    footer {
+        background-image: linear-gradient(to bottom, #000000a0, #000000a0), url(assets/textures/transition_void_stone_stone.png), url(assets/textures/stone.png);
+        background-position: top, top;
+        background-repeat: repeat, repeat-x, repeat;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        width: 100%;
+    }
+
+    footer div {
+        padding: 50px 0px 30px 0px;
+        text-align: center;
+    }
+
+    footer div p {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav {
+        background-image: linear-gradient(to bottom, #000000a0, #000000a0), url(assets/textures/transition_stone_void_stone.png), url(assets/textures/stone.png);
+        background-position: bottom, bottom;
+        background-repeat: repeat, repeat-x, repeat;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        width: 100%;
+    }
+
+    .banner {
+        position: relative;
+        text-align: center;
+    }
+
+    .banner .logo {
+        background-image: url(assets/textures/button.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        width: 150px;
+        height: 30px;
+    }
+
+    .banner {
+        width: 1200px;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        margin: auto;
+    }
+
+    .banner img {
+        width: 1200px;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        margin: auto;
+    }
+
+    .banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(assets/textures/transition_stone_void_stone_translucent.png);
+        background-position: bottom;
+        background-repeat: repeat-x;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        pointer-events: none;
+    }
+
+    .banner div {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .banner p {
+        position: absolute;
+        bottom: 35px;
+        right: 10px;
+        font-family: small;
+        font-size: 12px;
+    }
+
+    .banner a {
+        padding: 10px;
+    }
+
+    a {
+        color: #a090f0;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    .container {
+        background-image: url(assets/textures/stone.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        box-shadow: inset 0 0 10px #000000;
+        margin-top: 10px;
+    }
+
+    .container .title {
+        background-image: url(assets/textures/window_title.png);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        background-size: 64px;
+        padding: 4px;
+        box-shadow: inset 0 0 10px #000000;
+        font-size: 18px;
+    }
+
+    .container p {
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .images {
+        overflow-x: scroll;
+    }
+
+    .flexbox {
+        display: flex;
+        flex: 2;
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .flexbox .container {
+        margin: 0px;
+        flex: 1;
+    }
+
+    .flexbox .container:first-child {
+        margin-right: 5px;
+    }
+
+    .flexbox .container:last-child {
+        margin-left: 5px;
+    }
+
+    .smalltext {
+        position: absolute;
+        font-family: small;
+        font-size: 10px;
+        right: 20px;
+    }
+</style>
+
+</html>
