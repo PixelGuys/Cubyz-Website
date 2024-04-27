@@ -1,1 +1,246 @@
+* {
+    color-scheme: dark;
+    font-family: font;
+    font-size: 18px;
+    text-shadow: 2px 2px 0px #000000;
+}
 
+@font-face {
+    font-family: font;
+    src: url(assets/fonts/unscii-16-full.ttf);
+}
+
+@font-face {
+    font-family: small;
+    src: url(assets/fonts/slkscr.ttf);
+}
+
+::-webkit-scrollbar {
+    height: 15px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url(assets/textures/scrollbar.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: url(assets/textures/oak_planks.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: url(assets/textures/oak_planks.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+}
+
+body {
+    background-image: url(assets/textures/void_stone.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    margin: 0px;
+}
+
+button {
+    background-image: url(assets/textures/button.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #00000080, #00000080), url(assets/textures/button.png);
+    cursor: pointer;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #000000a0, #000000a0), url(assets/textures/transition_void_stone_stone.png), url(assets/textures/stone.png);
+    background-position: top, top;
+    background-repeat: repeat, repeat-x, repeat;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    width: 100%;
+}
+
+footer div {
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+}
+
+footer div p {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-image: linear-gradient(to bottom, #000000a0, #000000a0), url(assets/textures/transition_stone_void_stone.png), url(assets/textures/stone.png);
+    background-position: bottom, bottom;
+    background-repeat: repeat, repeat-x, repeat;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner .logo {
+    background-image: url(assets/textures/button.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    width: 150px;
+    height: 30px;
+}
+
+.banner {
+    width: 1200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.banner img {
+    width: 1200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/textures/transition_stone_void_stone_translucent.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    pointer-events: none;
+}
+
+.banner div {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.banner p {
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    font-family: small;
+    font-size: 12px;
+}
+
+.banner a {
+    padding: 10px;
+}
+
+a {
+    color: #a090f0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+.container {
+    background-image: url(assets/textures/stone.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    box-shadow: inset 0 0 10px #000000;
+    margin-top: 10px;
+}
+
+.container .title {
+    background-image: url(assets/textures/window_title.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
+    padding: 4px;
+    box-shadow: inset 0 0 10px #000000;
+    font-size: 18px;
+}
+
+.container p {
+    margin: 0px;
+    padding: 20px;
+}
+
+.images {
+    overflow-x: scroll;
+}
+
+.flexbox {
+    display: flex;
+    flex: 2;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.flexbox .container {
+    margin: 0px;
+    flex: 1;
+}
+
+.flexbox .container:first-child {
+    margin-right: 5px;
+}
+
+.flexbox .container:last-child {
+    margin-left: 5px;
+}
+
+.smalltext {
+    position: absolute;
+    font-family: small;
+    font-size: 10px;
+    right: 20px;
+}
+
+#turn_this_markdown_to_html_pretty_please img {
+    width: max-content;
+}
