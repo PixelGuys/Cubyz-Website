@@ -229,7 +229,7 @@ main img {
 
 @media screen and (max-width: 800px) {
     .flexbox {
-        flex-direction: column; /* Ensure items stack vertically on smaller screens */
+        flex-direction: column;
     }
 
     .flexbox .container:first-child {
