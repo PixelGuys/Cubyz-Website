@@ -171,7 +171,7 @@ nav {
 }
 
 a {
-    color: #a090f0;
+    color: #9090ff;
 }
 
 main {
@@ -243,4 +243,8 @@ main img {
 
 #turn_this_markdown_to_html_pretty_please img {
     width: max-content;
+}
+
+.heading {
+    color: #30ff30;
 }

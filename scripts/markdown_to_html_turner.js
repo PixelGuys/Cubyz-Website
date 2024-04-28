@@ -42,12 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     var bananaDiv = bananaDivs[bananaDivs.length - 1];
 
                     // Check if line is empty
+                    bananaDiv.innerHTML += "<br>";
                     if (lines[i].trim() === "") {
                         // If line is empty, add <br> tag
-                        bananaDiv.appendChild(document.createElement("br"));
+                        bananaDiv.innerHTML += "";
                     } else {
                         // If line is not empty, add text inside banana div
-                        bananaDiv.innerHTML += lines[i].replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2">$1</a>'); + "<br>"; // Add new line
+                        if (lines[i].startsWith("## ") || lines[i].startsWith("### ") || lines[i].startsWith("### ")) {
+                            bananaDiv.innerHTML += "<span class=\"heading\">"+lines[i]+"</span>";
+                        } else {
+                            bananaDiv.innerHTML += lines[i].replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2">$1</a>'); // Add new line
+                        }
                     }
                 }
 
