@@ -17,7 +17,7 @@
 
 ::-webkit-scrollbar {
     height: 15px;
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -82,6 +82,16 @@ footer {
     width: 100%;
 }
 
+footer a {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+footer a:hover, footer:active {
+    color: #fff;
+    transition: 0.2s;
+}
+
 footer div {
     padding: 50px 0px 30px 0px;
     text-align: center;
@@ -116,10 +126,10 @@ nav {
     background-size: 64px;
     width: 150px;
     height: 30px;
+    overflow: hidden;
 }
 
 .banner {
-    width: 1200px;
     height: 200px;
     object-fit: cover;
     display: block;
@@ -127,7 +137,7 @@ nav {
 }
 
 .banner img {
-    width: 1200px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
@@ -152,10 +162,18 @@ nav {
 }
 
 .banner div {
+    background-image: url(assets/textures/void_stone.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: 64px;
     display: flex;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 100%;
+    /* width: 100%;*/
 }
 
 .banner p {
@@ -168,10 +186,32 @@ nav {
 
 .banner a {
     padding: 10px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.banner a:hover, .banner a:active {
+    color: #fff;
+    transition: 0.2s;
+}
+
+p.intro {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 a {
     color: #9090ff;
+}
+
+a:hover, a:active {
+    color: #fff;
+    transition: 0.2s;
 }
 
 main {
@@ -200,7 +240,7 @@ main img {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
     background-size: 64px;
-    padding: 4px;
+    padding: 10px;
     box-shadow: inset 0 0 10px #000000;
     font-size: 18px;
 }
