@@ -18,8 +18,9 @@ If you want to steal, go to github, this isn't too good for stealing
             <img src="assets/images/green_purple_crystals.png" alt="">
             <div>
                 <img class="logo" src="assets/textures/pixelguys.png" alt="">
-                <a href="">Home</a>
-                <a href="">Features</a>
+                <a href="index.html">Home</a>
+                <a href="">Features (no page)</a>
+                <!-- Go add a page i guess? -->
                 <a href="information.html">Information</a>
             </div>
             <p id="modt-text">
@@ -30,6 +31,21 @@ If you want to steal, go to github, this isn't too good for stealing
     <main id="turn_this_markdown_to_html_pretty_please">
         https://raw.githubusercontent.com/PixelGuys/Cubyz/master/README.md
     </main>
+    <div id="popup" style="display: none;">
+        <div id="popup-background"></div>
+        <div id="agree-popup">
+            <p class="title">Cookie preferences</p>
+            <p>
+                To use this feature, please allow this webpage to collect cookies. This allows the website to save
+                preferences. We do not share information to any company.<br><br>Do you want to enable cookies on this
+                page?<br>
+                <button onclick="allowCookies()">Yes</button>
+                <button onclick="disallowCookies()">No, take me back</button>
+                <!-- Change this urself next time pls -->
+                <!-- Go to the cookie.js file to change cookie behavour -->
+            </p>
+        </div>
+    </div>
     <footer>
         <div>
             <a href="?">Legal</a>
@@ -43,5 +59,7 @@ If you want to steal, go to github, this isn't too good for stealing
     <script src="scripts/index.js"></script>
     <script src="scripts/motd_randomiser.js"></script>
     <script src="scripts/markdown_to_html_turner.js"></script>
+    <script src="scripts/cookie.js"></script>
+    <!-- This file adds cookie functionality, removing this is stupid and i sugest just leaving it it-->
 </body>
 </html>
