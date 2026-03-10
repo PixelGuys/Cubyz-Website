@@ -1,23 +1,14 @@
 {
-  "name": "cubyz-website",
-  "version": "1.0.0",
-  "description": "Cubyz Website",
-  "main": "src/index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PixelGuys/Cubyz-Website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PixelGuys/Cubyz-Website/issues"
-  },
-  "homepage": "https://github.com/PixelGuys/Cubyz-Website#readme",
-  "dependencies": {
-    "express": "^5.2.1"
-  }
+    "name": "cubyz-website",
+    "private":true,
+    "scripts": {
+        "frontEnd":"npm run dev --prefix frontEnd",
+        "backEnd":"npm run dev --prefix backEnd",
+        "dev":"concurrently \"npm run frontEnd\" \"npm run backEnd\" ",
+        "build":"npm run build --prefix frontEnd"
+    },
+    "devDependencies": {
+        "concurrently":"^9.2.1"
+    },
+    "version": "1.0.0"
 }
