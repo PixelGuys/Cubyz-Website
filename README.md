@@ -15,3 +15,28 @@ You can use this by putting this in your html file including your markdown url. 
     https://raw.githubusercontent.com/PixelGuys/Cubyz/master/README.md
 </main>
 ```
+
+
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+frontEnd/dist will be the frontEnd pages
+backEnd is the nodejs backEnd server
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+

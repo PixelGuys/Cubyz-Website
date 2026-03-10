@@ -181,9 +181,6 @@ main {
     padding: 8px;
 }
 
-main img {
-    width: 100%;
-}
 
 .container {
     background-image: url(assets/textures/stone.png);

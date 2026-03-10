@@ -1,0 +1,23 @@
+//import './assets/main.css'
+
+import { createApp } from 'vue'
+import App from './App.vue'
+
+
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
+
+import a from "./pages/Index.vue"
+import b from "./pages/information.vue"
+
+const routes = [
+  { path: '/', component: a },
+  { path: '/information', component: b },
+]
+
+export const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+
+
+createApp(App).use(router).mount('#app')

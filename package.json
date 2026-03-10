@@ -1,0 +1,14 @@
+{
+    "name": "cubyz-website",
+    "private":true,
+    "scripts": {
+        "frontEnd":"npm run dev --prefix frontEnd",
+        "backEnd":"npm run dev --prefix backEnd",
+        "dev":"concurrently \"npm run frontEnd\" \"npm run backEnd\" ",
+        "build":"npm run build --prefix frontEnd"
+    },
+    "devDependencies": {
+        "concurrently":"^9.2.1"
+    },
+    "version": "1.0.0"
+}
