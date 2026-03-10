@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig(()=>{
-  const base = process.env.BASE; // reads the CLI variable
+  const base = process.env.BASE || "/"; // reads the CLI variable
   console.log('BASE:', base);
 
   return {
@@ -19,6 +19,6 @@ export default defineConfig(()=>{
         '@': fileURLToPath(new URL('./src', import.meta.url))
       },
     },
-    base: base || "/"
+    base: base
   }
 })
