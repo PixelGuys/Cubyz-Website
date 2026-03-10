@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import { setRandomText } from "./motd_randomiser"
+
 
 const message = ref("You did it!")
 onMounted(async()=>{
@@ -11,6 +13,7 @@ onMounted(async()=>{
     console.log(error)
     message.value = String(error)
   }
+  setRandomText();
 })
 </script>
 

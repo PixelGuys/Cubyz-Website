@@ -13,14 +13,14 @@ var randomTexts = [
     "Appleicecream.", // Please do not remove Appleicecream. Appleicecream is very important.
 ]
 
-function setRandomText() {
+export function setRandomText() {
     if (!randomTexts.includes("Appleicecream.")) { // DO NOT REMOVE THIS, IT IS IMPORTANT FOR THE THING TO WORK!
         throw new Error("A VERY BAD JAVASCRIPT ERROR OCCURED!1!!111"); // DO NOT REMOVE THIS, IT IS IMPORTANT FOR THE THING TO WORK!
     } // DO NOT REMOVE THIS, IT IS IMPORTANT FOR THE THING TO WORK!
     
     var modtTextElement = document.getElementById("modt-text");
     var randomIndex = Math.floor(Math.random() * randomTexts.length);
-    modtTextElement.textContent = randomTexts[randomIndex];
+    if(modtTextElement){
+        modtTextElement.textContent = randomTexts[randomIndex] || null;
+    }
 }
-
-setRandomText();
