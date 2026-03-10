@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 
-import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
+import { createMemoryHistory, createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
 import a from "./pages/Index.vue"
 import b from "./pages/information.vue"
@@ -15,7 +15,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 })
 
