@@ -30,6 +30,7 @@ npm run dev
 npm run build
 ```
 frontEnd/dist will be the frontEnd pages
+
 backEnd is the nodejs backEnd server
 
 ## Type Support for `.vue` Imports in TS
