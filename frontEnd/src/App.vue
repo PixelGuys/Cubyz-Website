@@ -17,9 +17,9 @@ onMounted(async()=>{
 <template>
       <nav>
       <div class="banner">
-          <img src="/public/assets/images/green_purple_crystals.png" alt="">
+          <img src="/assets/images/green_purple_crystals.png" alt="">
           <div>
-              <img class="logo" src="/public/assets/textures/pixelguys.png" alt="">
+              <img class="logo" src="/assets/textures/pixelguys.png" alt="">
               <RouterLink to="/">Home</RouterLink>
               <RouterLink to="/">Features (no page)</RouterLink>
               <!-- Go add a page i guess? -->
