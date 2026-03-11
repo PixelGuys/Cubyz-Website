@@ -1,0 +1,55 @@
+
+nav {
+    background-image: url(assets/images/cubyz.0.1.0.png);
+    background-position: center, center;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    width: 100%;
+}
+
+
+.banner {
+    position: relative;
+    text-align: center;
+    image-rendering: pixelated;
+    max-width: 1200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.banner .logo {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    align-self: center;
+    height: 50%;
+    width: auto;
+
+
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.banner #modt-text {
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    font-family: small;
+    font-size: 12px;
+}
+
+.banner .button {
+    display: inline;
+    color: #ffffff;
+    background-color: #000000aa;
+    padding: 10px;
+    margin: 1px;
+}
+.banner a{
+    text-decoration: none;
+}

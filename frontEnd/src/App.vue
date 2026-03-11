@@ -20,22 +20,20 @@ onMounted(async()=>{
 <template>
       <nav>
       <div class="banner">
-          <img src="/assets/images/green_purple_crystals.png" alt="">
-          <div>
-              <img class="logo" src="/assets/textures/pixelguys.png" alt="">
-              <RouterLink to=".">Home</RouterLink>
-              <RouterLink to=".">Features (no page)</RouterLink>
-              <!-- Go add a page i guess? -->
-              <RouterLink to="information">Information</RouterLink>
-          </div>
+          <img class="logo" src="/assets/images/CubyzLogo.png" alt="">
+          <br>
+
           <p id="modt-text">
               "Why is nothing here?" - you (probably)
-          </p> 
+          </p>          
+          <router-link to="."><div class="button">Home</div></router-link> 
+          <router-link to="."><div class="button">Features (no page)</div></router-link> 
+          <router-link to="information"><div class="button">Information</div></router-link> 
       </div>
   </nav>
   <main>
         <RouterView></RouterView>
-    </main>
+  </main>
      
 </template>
 
