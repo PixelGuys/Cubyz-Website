@@ -21,6 +21,7 @@ You can use this by putting this in your html file including your markdown url. 
 ### Compile and Hot-Reload for Development
 
 ```sh
+npm install
 npm run dev
 ```
 
