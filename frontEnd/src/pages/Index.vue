@@ -63,17 +63,18 @@ onMounted(() => {
 </script>
 <style scoped>
 .hcg-slider {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .hcg-slide-container {
+    height: 100%;
     width: 100%;
-    height: 400px;
+    max-width: 100%;
+    display: inline-block;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    border: 1px solid #a0a0a0;
 }
 .hcg-slider-track {
     height: 100%;
@@ -82,18 +83,20 @@ onMounted(() => {
     width: 100%;
     height: 100%;
     display: none;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    border: solid 1px #a0a0a0;
+    box-sizing: border-box;
 }
 .hcg-slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(0.8);
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100px;
+    display: inline-block;
 }
-
 .hcg-slide-text {
-    display: none;
     color: #000000;
     font-size: 20px;
     padding: 3px 10px;
@@ -133,7 +136,9 @@ onMounted(() => {
     left: 0;
     border-radius: 0 3px 3px 0;
 }
-
+#hcg-slide-prev:hover, #hcg-slide-next:hover {
+    background-color: #000c;
+}
 .hcg-slide-dot-control {
     margin-top: 10px;
     text-align: center;
@@ -149,6 +154,18 @@ onMounted(() => {
 }
 .hcg-slide-dot.dot-active {
     background-color: #717171;
+}
+.hcg-slide-number {
+    color: #000000;
+    font-size: 15px;
+    padding: 3px 10px;
+    position: absolute;
+    border-radius: 5px;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(255 255 255 / 50%);
+    text-shadow: 0 0 2px #ffffff7d;
+    font-weight: bold;
 }
 /************CSS Animation***********/
 
