@@ -169,12 +169,10 @@ onMounted(() => {
 </style>
 
 <template>
-  <p style="text-align: center; display: none;"> <!--Change the "text-align: center" to "display none" if you want it gone.-->
-            Embark on an thrilling journey across vast landscapes, <br>exploring the deepest of caves <br>unseen by
-            daylight.
-            Discover ancient minerals, untouched by time, <br>as you discover more in this forgotten
-            <br>world.
-        </p>
+    <h1 style="font-size: 70px; text-align: center;">Cubyz</h1>
+    <p style="text-align: center; font-size: 22px;"> <!--Change the "text-align: center" to "display none" if you want it gone.-->
+        Open Source <b>Infinite</b> Voxel Game
+    </p>
 
         <div id="hcg-slider-1" class="hcg-slider">
             <div class="hcg-slide-container">
@@ -207,10 +205,18 @@ onMounted(() => {
                     Installation in Four Clicks
                 </p>
                 <p>
-                    The guide can be found <a href="https://github.com/PixelGuys/Cubyz/blob/master/README.md">here</a>.
+                    The guide can be found <a href="https://wiki.cubyz.net/index.php/Installation_Guide">here</a>.
                 </p>
             </div>
         </div>
+
+        <p style="text-align: center;"> <!--Change the "text-align: center" to "display none" if you want it gone.-->
+            Embark on an thrilling journey across vast landscapes, <br>exploring the deepest of caves <br>unseen by
+            daylight.
+            Discover ancient minerals, untouched by time, <br>as you discover more in this forgotten
+            <br>world.
+        </p>
+
         <div class="container">
             <p class="title">
                 Features
