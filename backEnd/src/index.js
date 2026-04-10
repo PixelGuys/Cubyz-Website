@@ -13,8 +13,8 @@ const corsOptions = {
         
         // Check against allowed patterns
         const allowedPatterns = [
-            /^https:\/\/.*\.myapp\.com$/,  // Any subdomain of myapp.com
-            /^https:\/\/myapp\.com$/,       // Main domain
+            /^https:\/\/.*\.cubyz\.com$/,  // Any subdomain of cubyz.com
+            /^https:\/\/cubyz\.com$/,       // Main domain
             /^http:\/\/localhost:\d+$/,     // Any localhost port (dev)
         ];
         
@@ -37,5 +37,5 @@ app.get("/test/1",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log(`Website running on ${port}`);
+    console.log(`Backend running on ${port}`);
 })
