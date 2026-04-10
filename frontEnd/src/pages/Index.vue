@@ -52,11 +52,11 @@
                 Some screenshots
             </p>
             <div class="images">
-                <img style="width: 100%" src="/assets/images/colorful_crystals.png" alt="">
-                <img style="width: 100%" src="/assets/images/treetops.png" alt="">
-                <img style="width: 100%" src="/assets/images/icymountain.png" alt="">
-                <img style="width: 100%" src="/assets/images/green_crystals.png" alt="">
-                <img style="width: 100%" src="/assets/images/island.png" alt="">
+                <img style="width: 100%" src="/assets/images/screenshots/colorful_crystals.png" alt="">
+                <img style="width: 100%" src="/assets/images/screenshots/treetops.png" alt="">
+                <img style="width: 100%" src="/assets/images/screenshots/icymountain.png" alt="">
+                <img style="width: 100%" src="/assets/images/screenshots/green_crystals.png" alt="">
+                <img style="width: 100%" src="/assets/images/screenshots/island.png" alt="">
             </div>
         </div>
 </template>
