@@ -1,6 +1,6 @@
 
 nav {
-    background-image: url(assets/images/cubyz.0.1.0.png);
+    background-image: url(assets/images/releases/cubyz.0.1.0.png);
     background-position: center, center;
     background-size: cover;
     image-rendering: pixelated;
@@ -28,8 +28,6 @@ nav {
     align-self: center;
     height: 50%;
     width: auto;
-
-
     object-fit: cover;
     display: block;
     margin: auto;
@@ -37,10 +35,10 @@ nav {
 
 .banner #modt-text {
     position: absolute;
-    bottom: 35px;
-    right: 10px;
+    bottom: 7px;
+    right: -276px;
     font-family: small;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .banner .button {
@@ -49,6 +47,7 @@ nav {
     background-color: #000000aa;
     padding: 10px;
     margin: 1px;
+    font-family: small;
 }
 .banner a{
     text-decoration: none;
