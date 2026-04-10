@@ -3,54 +3,36 @@ import { onMounted } from "vue";
 import { simpleSlider } from "@/scripts/slideshow.js";
 
 const imagesList = [
-  {
-    src: "/assets/images/screenshots/colorful_crystals.png",
-    link: "",
-    alt: "",
-    name: "Colorful Crystals"
-  },
-  {
-    src: "/assets/images/screenshots/green_purple_crystals.png",
-    link: "",
-    alt: "",
-    name: "Green Purple Crystals"
-  },
-  {
-    src: "/assets/images/screenshots/naturecave.png",
-    link: "",
-    alt: "",
-    name: "Nature Cave"
-  },
-  {
-    src: "/assets/images/screenshots/dirt.png",
-    link: "",
-    alt: "",
-    name: "Dirt"
-  },
-  {
-    src: "/assets/images/screenshots/icymountain.png",
-    link: "",
-    alt: "",
-    name: "Icy Mountain"
-  },
-  {
-    src: "/assets/images/screenshots/treetops.png",
-    link: "",
-    alt: "",
-    name: "Treetops"
-  },
-  {
-    src: "/assets/images/screenshots/green_crystals.png",
-    link: "",
-    alt: "",
-    name: "Green Crystals"
-  },
-  {
-    src: "/assets/images/screenshots/island.png",
-    link: "",
-    alt: "",
-    name: "Island"
-  }
+    {
+        src: "/assets/images/screenshots/rainbow-trees-text.png",
+        link: "",
+        alt: "",
+        name: "Rainbow Trees"
+    },
+    {
+        src: "/assets/images/screenshots/colorful_crystals.png",
+        link: "",
+        alt: "",
+        name: "Colorful Crystals"
+    },
+    {
+        src: "/assets/images/screenshots/green_purple_crystals.png",
+        link: "",
+        alt: "",
+        name: "Green Purple Crystals"
+    },
+    {
+        src: "/assets/images/screenshots/icymountain.png",
+        link: "",
+        alt: "",
+        name: "Icy Mountain"
+    },
+    {
+        src: "/assets/images/screenshots/green_crystals.png",
+        link: "",
+        alt: "",
+        name: "Green Crystals"
+    },
 ];
 
 onMounted(() => {
@@ -64,9 +46,8 @@ onMounted(() => {
 <style scoped>
 .hcg-slider {
     width: auto;
-    height: auto;
+    height: 500px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .hcg-slide-container {
     height: 100%;
@@ -95,6 +76,7 @@ onMounted(() => {
     max-height: 100%;
     min-height: 100px;
     display: inline-block;
+    zoom: 40%;
 }
 .hcg-slide-text {
     color: #000000;
@@ -245,17 +227,5 @@ onMounted(() => {
                 - Colored glass that filters light <br>
                 - Mod and addon friendly
             </p>
-        </div>
-        <div class="container">
-            <p class="title">
-                Some screenshots
-            </p>
-            <div class="images">
-                <img style="width: 100%" src="/assets/images/screenshots/colorful_crystals.png" alt="">
-                <img style="width: 100%" src="/assets/images/screenshots/treetops.png" alt="">
-                <img style="width: 100%" src="/assets/images/screenshots/icymountain.png" alt="">
-                <img style="width: 100%" src="/assets/images/screenshots/green_crystals.png" alt="">
-                <img style="width: 100%" src="/assets/images/screenshots/island.png" alt="">
-            </div>
         </div>
 </template>
