@@ -20,7 +20,7 @@ onMounted(async()=>{
 <template>
       <nav>
       <div class="banner">
-          <img class="logo" src="/assets/images/CubyzLogo.png" alt="">
+          <a href="/"><img class="logo" src="/assets/images/CubyzLogo.png" alt=""></a>
           <br>
 
           <p id="modt-text">
@@ -28,7 +28,7 @@ onMounted(async()=>{
           </p>          
           <router-link to="."><div class="button">Home</div></router-link> 
           <router-link to="."><div class="button">Features (no page)</div></router-link> 
-          <router-link to="information"><div class="button">Information</div></router-link> 
+          <router-link to="information"><div class="button">About</div></router-link> 
       </div>
   </nav>
   <main>
