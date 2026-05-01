@@ -18,9 +18,9 @@ export function setRandomText() {
         throw new Error("A VERY BAD JAVASCRIPT ERROR OCCURED!1!!111"); // DO NOT REMOVE THIS, IT IS IMPORTANT FOR THE THING TO WORK!
     } // DO NOT REMOVE THIS, IT IS IMPORTANT FOR THE THING TO WORK!
     
-    var modtTextElement = document.getElementById("modt-text");
+    var motdTextElement = document.getElementById("motd-text");
     var randomIndex = Math.floor(Math.random() * randomTexts.length);
-    if(modtTextElement){
-        modtTextElement.textContent = randomTexts[randomIndex] || null;
+    if(motdTextElement){
+        motdTextElement.textContent = randomTexts[randomIndex] || null;
     }
 }

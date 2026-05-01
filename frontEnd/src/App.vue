@@ -23,7 +23,7 @@ onMounted(async()=>{
           <img class="logo" src="/assets/images/CubyzLogo.png" alt="">
           <br>
 
-          <p id="modt-text">
+          <p id="motd-text">
               "Why is nothing here?" - you (probably)
           </p>          
           <router-link to="."><div class="button">Home</div></router-link> 
